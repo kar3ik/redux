@@ -1,0 +1,43 @@
+Redux
+------
+
+A store that holds the state of your application
+An action that describes what happened in the application
+A reducer which handles the action and decide how to update the state
+
+Redux store
+------------
+
+Holds application state
+allow access to state via getState()
+allow state to be updated via dispatch(action)
+registes listeners via subscribe(listener)
+handles unregistering of listeners via fuunction returned by subscribe(listener)
+
+
+Redux Pattern
+-------------
+
+create a store ==> declare initialState and reducer ==> define action and actionCreators ==> subscribe to the store(to console log the updates) ==> dispatch actions to update the store  ==> unsubscribe
+
+
+middlewares
+
+redux-thunk
+redux-logger
+
+Async actions
+-------------
+
+eg:
+
+state = {
+    loading : true,
+    data :[],
+    error : ''
+}
+
+
+loading : display loading spinner in component
+data    : list of users
+error   : display error message
